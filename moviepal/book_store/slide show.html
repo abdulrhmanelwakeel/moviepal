@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <title>Navbar</title>
+        <!-- <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <link rel="stylesheet" href="slide show.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+        <p class="logo"> movie<span class="letter">p</span>al</p>
+        <div class="dropdown">
+            <button class="dropbtn">Genres</button>
+            <div class="dropdown-content">
+              <a href="https://www.youtube.com/watch?v=_e-wxg3T1nE">Crime</a>
+              <a href="https://elzero.org/category/courses/css-course/">Drama</a>
+              <a href="#">Comedy</a>
+            </div>
+          </div>
+          <div class="oteam">
+            <a class="soa" href="our_team.html">Our team</a>
+          </div>
+                
+            
+        
+        <div class="dropdown">
+            <button class="dropbtn">More</button>
+            <div class="dropdown-content">
+              <a href="https://www.youtube.com/watch?v=_e-wxg3T1nE">Regsiter</a>
+              <a href="https://elzero.org/category/courses/css-course/">Logout</a>
+            </div>
+          </div>
+        <a class="cta" href="#">Log in</a>
+        
+        <!-- <p class="menu cta">Menu</p> -->
+    </header>
+        <div class="momo">
+           
+            <img src="329605.jpg" alt="Norway" >
+
+            <div class="text-block">
+                <h1 class="tittle">movie<span class="letter">p</span>al</h1>
+                <p class="talk">There are a lot of movies these days, and it can be difficult to chose what to watch, therefore moviepal is here to help you pick
+                     a movie for the night from any genre you like, and check out our amazing choices of the finest movies.</p>
+              </div>
+          </div>
+          
+          <div class="slider sil">
+            <ul>   
+              <li>
+                 <img src="https://i.egycdn.com/pic/WmFwZndlY21IY3ZOcGJtdm1iRWNtdm1ibG1ZYm1UWUU.jpg"alt=" Aftermath ">
+                               <h5> Aftermath</h5>
+                               </li>
+              <li>
+                 <img src="https://i.egycdn.com/pic/WmFwZndlY21UbW1UYm1ibW1tdWNtYm1JeEthbXZtcGc.jpg"alt="">
+                     <h5> Home Alone </h5>
+            </li>
+              <li>
+                 <img src="https://i.egycdn.com/pic/WmFwZndlY21Udm1wcHBibWFjd0xOam12YW1FbUVh.jpg"alt="">
+                     <h5> Horrible Bosses   </h5>
+            </li>
+              
+              <li>
+                 <img src="https://i.egycdn.com/pic/WmFwZndlY21ZRW1wcGptbW11Y2FQeG1qbXZtWXZQ.jpg"alt="">
+                     <h5> 21 Jump Street    </h5>
+            </li>
+                  
+                    <li>
+                 <img src="https://i.egycdn.com/pic/WmFwZndlY21IY3ZObW12bXBiRWNQbXZ2Y21ibUxjbWptbQ.jpg"alt="">
+                     <h5> Psycho Storm Chaser    </h5>
+            </li>
+            <li>
+                 <img src="https://i.egycdn.com/pic/WmFwZndlY21Ub3ROdnZjdmNFY1BjTkVtWW9jYW12.jpg"alt="">
+                 <h5>  Behind the Sightings   </h5>
+                 </li>
+                 <li>
+                 <img src="https://i.egycdn.com/pic/WmFwZndlY21IY3ZORW1qbXZtYkVjbWptcEVsbWptamNOag.jpg"alt="">
+                 <h5>   The Jane Doe Murders    </h5>
+                 </li>
+                 <li>
+                 <img src="https://i.egycdn.com/pic/WmFwZndlY21IY3ZOdm1UYm1qRWNtam1ibUVtelBtVHB2.jpg"alt="Buckley's Chance">
+                        <h5> Buckley's Chance </h5>
+                 </li>
+           </ul>
+           </div>
+         <!--JS-->  
+           <script>
+              var indexValue = 0;
+              function slideShow(){
+                setTimeout(slideShow, 2500);
+                var x;
+                const img = document.querySelectorAll(" .sil img ");
+                for(x = 0; x < img.length; x++){
+                  img[x].style.display = "none";
+                }
+                indexValue++;
+                if(indexValue > img.length){indexValue = 1}
+                img[indexValue -1].style.display = "block";
+              }
+              slideShow();
+           </script>
+    
+    </body>
+</html>

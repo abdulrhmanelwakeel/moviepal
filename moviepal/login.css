@@ -1,0 +1,164 @@
+body{
+background-color: #2ec4b6;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.letter{
+  font-family: fantasy;
+}
+/* body{
+  background-color: red;
+} */
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 85px ;
+  
+  background-color: #24252a;
+  height: 70px;
+
+}
+
+.logo {
+  margin-right: auto;
+    font-size: xxx-large;
+    color: white;
+    font-family: fantasy;
+  text-decoration: none;}
+    .letter{
+      color: #0088a9;
+    }
+
+
+.oteam,
+.cta,.soa
+{
+  font-family: "Montserrat", sans-serif;
+  color: #edf0f1;
+  text-decoration: none;
+  font-size: large;
+}
+
+/* .soa{
+  font-family: "Montserrat", sans-serif;
+  color: #edf0f1;
+  text-decoration: none;
+  font-size: large;
+} */
+
+.oteam a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: #0088a9;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background-color: #0088a9;
+  color: black;
+}
+.dropbtn {
+  background-color: inherit;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  font-size: larger;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  /* display: inline-block; */
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+color: rgba(0, 136, 169, 0.8);}
+
+
+.login-box{
+width: 391px;
+height: 483px;
+margin: auto;
+margin-top: 184px;
+background-color: azure;
+border-radius: 37px;
+position: absolute;
+top:0;
+bottom: 0;
+left: 0;
+right: 0;
+box-shadow: 10px -20px;
+}
+h1{
+text-align: center;
+padding-top: 15px;
+
+}
+form{
+width: 360px;
+margin-left: 20px;
+
+
+}
+form label{
+display: flex;
+ margin-top:35px;
+ font-size:18px;
+}
+form input{
+width: 89%;
+height: 34px;
+padding: 7px;
+border: 1px gray solid;
+border-radius: 26px;
+}
+input[type="button"]{
+width: 338px;
+height: 46px;
+margin-top: 33px;
+background-color: rgb(3, 17, 3);
+color: white;
+}
+
+.signup-link{
+font-size: medium;
+margin: 26px;
+}
