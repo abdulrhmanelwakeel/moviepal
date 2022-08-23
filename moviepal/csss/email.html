@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg.css">
+    <title>Document</title>
+    <script>
+        function validateForm(){
+            var name = document.getElementById('name').value;
+            var email= document.getElementById('email').value;
+            var pass1= document.getElementById('pass1').value;
+            var pass2= document.getElementById('pass2').value;
+            var valid = true;
+        
+            if(name == ""){
+                alert("name is empty");
+                valid = false;}
+            else if(email == ""){
+                alert("Email is empty");
+                valid = false;}
+            else if(email.indexOf("@") == -1 || email.indexOf(".") == -1){
+                alert("Please Enter valid email");
+                valid = false;}
+            else if(pass1!= pass2){
+                alert("password doesnt match");
+                valid = false;}
+        
+            return valid;
+         } 
+        </script> </head>
+</head>
+<body >
+    <header>
+        <p class="logo"> movie<span class="letter">p</span>al</p>
+        <div class="dropdown">
+            <button class="dropbtn">Genres</button>
+            <div class="dropdown-content">
+              <a href="action.html">Crime</a>
+              <a href="https://elzero.org/category/courses/css-course/">Drama</a>
+              <a href="#">Comedy</a>
+            </div>
+          </div>
+          <div class="oteam">
+            <a class="soa" href="our_team.html">Our team</a>
+          </div>
+                
+            
+        
+        <div class="dropdown">
+            <button class="dropbtn">More</button>
+            <div class="dropdown-content">
+              <a href="https://www.youtube.com/watch?v=_e-wxg3T1nE">Regsiter</a>
+              <a href="https://elzero.org/category/courses/css-course/">Logout</a>
+            </div>
+          </div>
+        <a class="cta" href="#">Log in</a>
+        
+        <!-- <p class="menu cta">Menu</p> -->
+    </header>
+        <div class="signup-box">
+        <h1>sign up</h1>
+        <form name="myform" method="POST" onsubmit="return validateForm()">
+        <label>Username</label>
+        <br>
+        <input id="name" name="name" type="text" required placeholder="Enter your username" minlength="4" maxlength="10">
+        <br>
+        <label>Email</label>
+        <br>
+        <input id="email" name="email" type="text" required  placeholder="Enter your email">
+        <br>
+        <label>Password</label>
+        <br>
+        <input id="pass1" name="pass1" type="Password"required placeholder="Enter your password" minlength="5" maxlength="10">
+        <br>
+        <label>Confirm password</label>
+        <br>
+        <input id="pass2" name="pass2" type="password" required placeholder="Please rewrite your password"minlength="5" maxlength="10">
+        <br>
+        <input type="submit" value="Sign up">
+        </form>
+        </div>
+        </body>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html> <head> <title>  My first html page </title>
+    <script> 
+    function validateForm() {
+        varvalid = true;
+        
+                 if(document.inputForm.email.value.indexOf("@")==-1||document.inputForm.email.value.indexOf(".")==-1){
+                        alert("Please Enter valid email, e.g:info@yahoo.com");
+                        document.inputForm.email.focus();
+                        valid=false; }
+                        
+                            if(document.inputForm.pass1.value!=document.inputForm.pass2.value ){
+                                alert("password doesnt match");
+                                valid=false;}
+                        
+                    // document.write(valid);
+                    return valid;}
+                 </script> </head>
+                <BODY>
+                    <Form name="inputForm" method="POST" onSubmit="return validateForm()">
+                        <!-- Name<input type="text" name="name"> -->
+                        Email<input type="text" name="email"><br>
+                        password <input type="password" name="pass1">
+                        password <input type="password" name="pass2">
+
+                        <input type="submit">
+                    </form>
+                </BODY>
+            </HTML>

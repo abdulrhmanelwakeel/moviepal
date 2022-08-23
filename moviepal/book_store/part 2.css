@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background:#2ec4b6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+  margin-top: 50px;
+}
+
+.wrapper h1{
+  /* font-family: 'Allura', cursive; */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 370px;
+  padding: 20px;
+  line-height: 23px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #0088a9;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 37%;
+  /* transform: translateX(-50%); */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 50%;
+  filter: grayscale(1);
+  transition: 400ms;
+}
+.team .team_member .team_img:hover img{
+    filter: grayscale(0);
+}
+header{
+  display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252a;
+    height: 70px;
+
+  }
+  
+  .logo {
+    margin-right: auto;
+      font-size: xxx-large;
+      color: white;
+      font-family: fantasy;
+    text-decoration: none;}
+      .letter{
+        color: #0088a9;
+      }
+  
+  
+  .oteam,
+  .cta
+  {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+    font-size: large;
+  }
+  
+  .soa{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+    font-size: large;
+  }
+  
+  .oteam a:hover {
+    color: #0088a9;
+  }
+  
+  .cta {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #0088a9;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .cta:hover {
+    background-color: #8ecae6;
+    color: black;
+  }
+  .dropbtn {
+    background-color: inherit;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    font-size: larger;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    /* display: inline-block; */
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+  color: rgba(0, 136, 169, 0.8);}
